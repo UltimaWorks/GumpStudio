@@ -353,7 +353,6 @@ namespace GumpStudio
 
             _txtSearch.Location = new Point(250, 8);
             _txtSearch.Size = new Size(150, 20);
-            _txtSearch.PlaceholderText = "ID (hex or decimal)";
             _txtSearch.TextChanged += txtSearch_TextChanged;
 
             // ── ListBox (shifted down 32px for filter row) ──

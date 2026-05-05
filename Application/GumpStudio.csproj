@@ -18,6 +18,7 @@
 		<OutputPath>..\Build\</OutputPath>
 		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
 		<StartupObject>GumpStudio.GumpDesignerMain</StartupObject>
+		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	  <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +37,9 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Ultima\Ultima.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Update="Forms\GumpArtBrowser.Designer.cs">
